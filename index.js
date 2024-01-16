@@ -16,7 +16,7 @@ function updateButton() {
 function githubSearch(event) {
   var username = document.getElementById("username").value;
   // console.debug('what is formData', formData.entries())
-  fetch.get('https://api.github.com/users/octocat')
+  fetch('https://api.github.com/users/octocat')
   .then(response => {
     // Handle the response data
     console.log(response.data);
