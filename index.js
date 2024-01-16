@@ -3,7 +3,7 @@
 const button = document.getElementById("dark-mode-text");
 const paragraph = document.querySelector("p");
 
-export function updateButton() {
+function updateButton() {
   if (button.innerText === "DARK") {
     button.innerText = "LIGHT";
     paragraph.textContent = "The machine has started!";
@@ -13,7 +13,7 @@ export function updateButton() {
   }
 }
 
-export function githubSearch(event) {
+function githubSearch(event) {
   var username = document.getElementById("username").value;
   // console.debug('what is formData', formData.entries())
   fetch.get('https://api.github.com/users/octocat')
